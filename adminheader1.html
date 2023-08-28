@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>RRS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="icon/png" href="asset/img/logo/rail_icon.png">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/animate.css">
+    <link rel="stylesheet" href="asset/css/hover-min.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/custom.css">
+    <script src="asset/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="asset/js/popper.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function dateTime(){
+        var today = new Date();
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var dateTime = date+' '+time;
+        return dateTime;
+    }
+    </script>
+</head>
+
+<body>
+<div>
+	<nav class="navbar bg-blue navbar-blue navbar-expand-sm mb-1 sticky-top">
+        <button class="navbar-toggler" data-target="#myNav" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-brand ml-auto"><a href="admin_home.php" class="text-light" style="text-decoration: none;">RAILWAY RESERVATION SYSTEM</a></div>
+        <div class="navbar-collapse collapse" id="myNav">
+            <ul class="navbar-nav ml-auto"></ul>
+        </div>
+        <div class="navbar-collapse collapse" id="myNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="" class="nav-link" >
+                    <script  type="text/javascript">
+                        var today = new Date();
+                        var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+                        var time = " [ " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()+ " ]";
+                        var dateTime = date+' '+time;
+                        document.write(dateTime);
+                    </script></a></li>
+            </ul>
+        </div>
+    </nav>  
+</body>
+</html>
